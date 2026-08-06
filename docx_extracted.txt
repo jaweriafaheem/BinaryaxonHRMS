@@ -1,0 +1,701 @@
+
+
+-952502847975Human Resource Management SystemHRMS Reimagined – Intelligent by Design.0Human Resource Management SystemHRMS Reimagined – Intelligent by Design.
+Human Resource Management System
+HRMS Reimagined – Intelligent by Design.
+
+Human Resource Management System
+HRMS Reimagined – Intelligent by Design.
+
+Contents
+ TOC \o "1-3" \h \z \u Introduction PAGEREF _Toc232927707 \h 3
+1. Dashboard PAGEREF _Toc232927716 \h 3
+2. Personal PAGEREF _Toc232927717 \h 4
+3. Employee Queries PAGEREF _Toc232927718 \h 4
+4. Attendance PAGEREF _Toc232927719 \h 5
+5. Leave Management PAGEREF _Toc232927720 \h 7
+6. Payroll Management PAGEREF _Toc232927721 \h 8
+6.1 Payroll Setup PAGEREF _Toc232927722 \h 8
+6.2 Payroll Process PAGEREF _Toc232927723 \h 8
+6.3 Payroll Reports PAGEREF _Toc232927724 \h 9
+7. Geo Fencing PAGEREF _Toc232927725 \h 10
+8. Advance / Loan PAGEREF _Toc232927726 \h 10
+9. Document Archiving PAGEREF _Toc232927727 \h 11
+10. Assets Management PAGEREF _Toc232927728 \h 11
+11. Procurement PAGEREF _Toc232927729 \h 12
+12. Appraisal (Performance Management) PAGEREF _Toc232927730 \h 12
+12.1 Evaluation Setup PAGEREF _Toc232927731 \h 12
+12.2 Evaluation Process PAGEREF _Toc232927732 \h 13
+13. Gate Pass PAGEREF _Toc232927733 \h 13
+14. Meal Pass PAGEREF _Toc232927734 \h 14
+15. Resign (Offboarding) PAGEREF _Toc232927735 \h 14
+16. Utilities PAGEREF _Toc232927736 \h 15
+17. Reports PAGEREF _Toc232927737 \h 15
+17.1 Attendance Reports PAGEREF _Toc232927738 \h 15
+17.2 Meal Reports PAGEREF _Toc232927739 \h 15
+17.3 Gate Pass Reports PAGEREF _Toc232927740 \h 16
+17.4 Other Reports PAGEREF _Toc232927741 \h 16
+18. Logs PAGEREF _Toc232927742 \h 16
+19. Setup PAGEREF _Toc232927743 \h 17
+20. Config PAGEREF _Toc232927744 \h 18
+21. Security PAGEREF _Toc232927745 \h 18
+22. Onboarding PAGEREF _Toc232927746 \h 19
+23. General Setting PAGEREF _Toc232927747 \h 19
+Summary: Module Index PAGEREF _Toc232927748 \h 20
+
+
+
+Introduction
+Prime HR is a comprehensive, cloud-based Human Resource Management System (HRMS) designed to streamline and automate every dimension of the employee lifecycle — from onboarding and daily attendance to payroll processing and final settlement. Built for multi-company, multi-location enterprises, Prime HR consolidates HR operations into a single, role-driven platform accessible by administrators, managers, and employees alike.
+
+This document provides a bird's-eye view of all functional modules available in Prime HR, summarising the sub-modules and key features within each. It is intended for stakeholders, implementation teams, and new users who need a concise map of system capabilities.
+
+23+
+Modules
+100+
+Sub-Modules
+Multi-Company
+Support
+Role-Based
+Access Control
+
+1. Dashboard
+The Dashboard is the first screen users see upon login. It is tailored by role — Administrators see an enterprise-wide operations overview, while employees see a personalised summary of their own data.
+
+Sub-Module
+Key Features
+Admin Dashboard
+Real-time KPIs: Active Employees, Contractual Employees, Daily Wagers, Permanent Employees
+Pending Requests panel: Leave Requests, Resignations, Profile Updates, Offer Approvals
+HR Costs & Liabilities breakdown: Invoice Amount, Statutory Payments, Fund Transfer, Cheques
+Active Employees trend chart (monthly line graph)
+New Induction bar chart (monthly joiners)
+Absent Without Leave bar chart (monthly comparison)
+Employee Dashboard
+Employee profile snapshot: name, designation, tenure, email, department
+Current month attendance summary: Present Days, Absent Days, Public Holidays
+Star rating and Pay Dashboard shortcut
+Pending Documents notification panel (with toggle enable/disable per document)
+Real-time geo-location map view (city, date & time)
+Quick-access tiles for key self-service actions
+
+
+
+2. Personal
+The personal module is the self-service area for every employee, providing access to company policies, payslips, and tax documentation.
+
+Sub-Module
+Key Features
+Company Policy
+View and download published company policy documents (PDF)
+Accessible to all active employees
+PaySlip
+Search payslips by Company, Department, Employee, and Payslip Month
+Date-range selection for custom period payslips
+Toggle: Active Employees Only
+Merge Payslips option for employees with multiple components
+Yearly Payslip download
+Tax Certificate
+View and download annual tax certificates
+Filter by company, employee, and fiscal year
+
+3. Employee Queries
+The Employee Queries module provides HR managers with a centralised inbox to review and approve requests from employees to update their own profile information.
+
+Sub-Module
+Key Features
+Profile Updates
+Grid view of all employee profile update requests with full detail columns
+Columns: Code, Name, Posting City, Residence City, Hire Date, DOB, ID Card Number, ID Issue & Expiry Dates, Designation, Department
+Highlighted rows (orange/red) for records requiring attention or with expired data
+Approve or reject profile change requests with a single action
+
+4. Attendance
+The Attendance module is one of the most feature-rich in Prime HR, covering every aspect of time and attendance management — from shift configuration and biometric integration to mobile punch-ins and client-specific policies.
+
+Sub-Module
+Key Features
+Time Table (Shift Time)
+Define granular shift timing: On Duty Time, Off Duty Time, Beginning In/Out, Ending In/Out
+Configure Half Day Start/End thresholds (in minutes)
+Set Break duration, Late Time, Leave Early Time
+Before Check-In OT and After Check-Out OT toggles
+Calculate OT after a specific number of hours
+Auto half-day and absent deduction thresholds
+Shift Category
+Group shift times into logical categories (e.g., Morning, Evening, Night)
+Company-specific category assignment
+Shift
+Create named shifts linked to a Shift Category, Shift Time, and Shift Days
+Set shift start date and active/inactive status
+Multi-company shift definitions with symbolic codes
+Assign Shift
+Bulk or individual shift assignment by Company, Department, Location, or Employee
+Date-range based assignment with historical view
+Override individual employee shifts independently of group assignments
+Approved Strength
+Define approved headcount per department, section, and location
+Monitor actual vs. approved headcount in real time
+Multi-company strength management
+Mobile Attendance
+View mobile punch-in/out records captured via the Prime HR mobile app
+Filter by Company, Employee, and Date Range
+Geo-tagged attendance records
+Manual Attendance
+Add manual attendance entries for employees (with HR override authority)
+Bulk upload attendance via Excel/CSV file
+Filter by Company, Employee, and Date Range
+Machine Logs
+View raw punch logs pulled from biometric attendance machines
+Audit trail for all machine-recorded in/out events
+Employee Overtime Approval
+Review and approve overtime claims per employee
+Filter by company, department, and date range
+Approve, reject, or modify overtime hours
+Short Hour Shift Assignment
+Assign reduced-hour shifts for specific employees or periods
+Supports flexible working hour arrangements
+Client Working Days
+Define client-specific working day calendars
+Useful for organisations deploying staff to client sites with differing schedules
+Client Allowance Policy
+Configure allowance rules tied to specific clients
+Parameters include allowance type, eligibility criteria, and amounts
+Client Sandwich Policy
+Define how leave days sandwiched between absences or holidays are treated
+Per-client configuration with rule-based logic
+Register Fingerprint
+Register employee biometric fingerprint data directly from the HRMS interface
+Links fingerprint to the employee profile for machine synchronisation
+Scan Fingerprint
+Verify and scan an employee fingerprint live from the system
+Useful for validation and re-enrolment workflows
+Auto Half-Day Leave Adjustment
+Automatically convert qualifying short attendances into half-day leave deductions
+Configurable rules by company and department
+
+5. Leave Management
+The Leave module handles all aspects of employee leave — from policy definition and public holiday calendars to employee applications, managerial approvals, and historical records.
+
+Sub-Module
+Key Features
+Leave Type Policy
+Define leave types (Annual, Sick, Casual, Maternity, etc.) with full parameter control
+Filter policies by Company, Section, Department, Country, State, Location, Nationality, Gender, Employment Type, Employee Type, Grade, and Category
+Configure accrual rules, encashment eligibility, carry-forward limits, and leave balance reset
+Public Holiday
+Maintain annual public holiday calendars per company and country
+Holiday dates automatically excluded from working-day calculations
+Leave Application
+Employee self-service leave application form
+Select leave type, date range, and supporting remarks
+View remaining leave balance before applying
+Leave Request
+Manager/HR inbox for all pending leave requests
+Multi-level approval workflow (configurable via Approval Hierarchy)
+Filter by status: Pending, Approved, Rejected, Cancelled
+Bulk approval capability
+Leave History
+Full audit trail of all leave transactions per employee
+Filter by company, department, employee, leave type, and date range
+Export leave history to Excel
+
+
+
+6. Payroll Management
+The payroll module is a full-cycle salary processing engine supporting multiple payroll groups, salary components, WPS (Wage Protection System) file generation, final settlement, and a rich suite of payroll reports.
+6.1 Payroll Setup
+Sub-Module
+Key Features
+Salary Components
+Define earnings and deduction components (Basic Salary, HRA, Transport, Gratuity, Tax, etc.)
+Mark components as taxable, pensionable, or WPS-applicable
+Formula-based or fixed-value component types
+Payroll Group
+Create named payroll groups with company binding
+Configure Payroll Start Day and Notice Period Payout Behaviour. Tax-enabled flag and default-group designation per company
+Configure Salary component rules 
+Approval Hierarchy assignment per group
+Establishment
+Register legal establishment entities for WPS filing compliance
+Link to company and banking details
+Leave Encashment
+Policy configuration for encashing unused leave balances
+Rules for eligibility, maximum days, and payout formula
+
+6.2 Payroll Process
+Sub-Module
+Key Features
+Employee Salary Setup
+Assign salary structure and component values to individual employees
+Effective-date based salary revisions
+Multi-company and multi-currency support
+Upload Payroll / Salary Adjustments
+Bulk upload other allowances and deductions data via Excel template
+Validation and error-reporting before committing
+Payroll Inputs
+Enter one-off or recurring payroll adjustments (bonuses, deductions, arrears)
+Per-employee or bulk input by department
+Initiate Payroll
+Launch monthly payroll processing for selected Company, Payroll Month, Payroll Type, and Payroll Group
+Scope control by Location/Branch, Department, or individual Employee
+One-click Process Payroll button with real-time status feedback
+Payroll Request
+Review & track the generated payroll summary before approval
+Drill-down to individual employee pay details
+Approvals
+Multi-level payroll approval workflow
+Approvers can approve, reject, or return for correction
+Audit log of all approval actions with timestamps
+Generate WPS / Bank Transfer
+Produce WPS-compliant SIF files for UAE labour compliance
+Generate bank transfer files for direct salary payment
+Establishment and bank mapping for file generation
+Final Settlement
+Compute End-of-Service (EOS) benefits including Gratuity, Notice Pay, Leave Encashment
+Line-by-line breakdown of settlement components
+Multi-step review and approval before disbursement
+Payment Process
+Execute the final salary or settlement payment
+Payment method selection: WPS, Bank Transfer, Cheque
+Payment confirmation and audit trail
+
+6.3 Payroll Reports
+Sub-Module
+Key Features
+Payroll Reports
+Payroll Register — detailed line-item salary registers per employee
+Pay Summary — condensed totals by department or company
+Pension Report — pension-eligible earnings and contributions
+Adhoc Payment Report — one-off payment audit
+Yearly Salary Report — full-year salary history per employee
+Department-Wise Payment Summary
+Gratuity Report — accrued and paid gratuity tracking
+Consolidated Payment Report — cross-company payment summary
+Salary Reconciliation Report — month-on-month variance analysis
+Payroll Reconciliation Report — component-level reconciliation
+Salary Release Hold Report — employees on salary hold
+EOS Status Report — end-of-service processing tracker
+WPS / Non-WPS Detail Report — payment channel breakdown
+
+7. Geo Fencing
+The Geo Fencing module enables location-based attendance validation and employee movement tracking, ensuring employees mark attendance only within approved geographic boundaries.
+
+Sub-Module
+Key Features
+User Location
+Track and view recorded GPS coordinates for each employee per date
+Show Route on Map to visualise an employee's travel path
+Filter by Company, Employee, and Date Range
+Polygon
+Define geographic boundary zones (polygons) on an interactive map
+Assign polygons to companies, locations, or branches
+Mobile attendance validity restricted to employees within defined polygons
+
+8. Advance / Loan
+The Advance/Loan module manages employee financial assistance requests — both salary advances and formal loans — with configurable policies and an approval workflow.
+
+Sub-Module
+Key Features
+Advance/Loan Policy
+Define separate policies for Advance and Loan types per company
+Configure Maximum Instalments and Number of Salaries eligibility threshold
+Active/Inactive policy status management
+Advance/Loan Application
+Employee self-service application for advance or loan
+Specify requested amount, reason, and preferred repayment schedule
+Advance/Loan Request Approval
+HR/Manager inbox for pending advance and loan requests
+Approve or reject with remarks
+Approved amounts are automatically linked to payroll deductions
+
+
+
+9. Document Archiving
+Document Archiving provides a structured digital repository for storing, categorising, and retrieving employee and organisational documents.
+
+Sub-Module
+Key Features
+Document Type
+Create and manage document type categories (e.g., ID Cards, Certificates, Contracts, Visas)
+Set mandatory/optional flag per document type
+Document Policy
+Define rules for document collection per employee category or grade
+Configure document expiry alerts and renewal reminders
+Attach and store actual document files against employee records
+
+10. Assets Management
+The Assets Management module tracks company-owned assets throughout their lifecycle — from procurement requisition through assignment to employees and inventory management.
+
+Sub-Module
+Key Features
+Assets Management Policy
+Define asset categories, depreciation rules, and eligibility criteria
+Company-specific policy configuration
+Assets Requisition
+Employee or department request for a specific asset
+Linked to Procurement for purchase initiation if stock is unavailable
+Assets Approval
+Manager or admin review of asset requisitions
+Approve, reject, or defer with reason and comments
+Assets Assignment
+Record assignment of an asset to a specific employee
+Track serial numbers, condition, and handover date
+Inventory
+Full inventory register of all company assets
+Filter by asset type, category, location, status
+Track available, assigned, under repair, and retired assets
+Employee Assets
+View all assets currently assigned to an individual employee
+Manage asset return and handback workflows
+
+
+11. Procurement
+The Procurement module manages the purchase order lifecycle, from requisition through vendor selection and order fulfilment.
+
+Sub-Module
+Key Features
+Purchase Orders
+Create and manage Purchase Orders (PO) with auto-generated PO numbers
+Link POs to employee requisitions, departments, and vendors
+Fields: Purchase Date, Estimated Received Date, Company, Section, Department, Employee, Head, Location/Branch, Vendor
+Approve, view, and print purchase orders
+Download ECN (External Communication Notification) Report
+
+12. Appraisal (Performance Management)
+The Appraisal module provides a structured performance evaluation framework, from KPI definition to scoring and employee appraisal initiation.
+
+12.1 Evaluation Setup
+Sub-Module
+Key Features
+Scale
+Define rating scales (e.g., 1–5, Excellent/Good/Average)
+Assign numeric values to qualitative descriptors
+KPI
+Create Key Performance Indicators linked to roles or departments
+Set weightage, target, and measurement criteria per KPI
+Overall Rating
+Configure overall performance rating bands based on score ranges
+Map score totals to final rating labels
+Evaluation Setup
+Assemble a complete evaluation form by combining Scale, KPI, and Rating configurations
+Company-specific setup with named evaluation templates
+Status management (Draft / Published)
+
+
+12.2 Evaluation Process
+Sub-Module
+Key Features
+Evaluation Marking
+Score employees against defined KPIs on the configured evaluation form
+Save scores in draft before final submission
+Initiate Employee Evaluation
+Launch a formal evaluation cycle for selected employees or departments
+Set evaluation period and notify participants
+Track completion status per employee
+
+13. Gate Pass
+The Gate Pass module controls and records the entry and exit of employees and visitors at facility gates, with configurable visit types and a scan-based verification workflow.
+
+Sub-Module
+Key Features
+Visit Type Policy
+Define visit types (e.g., Duty Off, Sehri Time, Official Visit) with codes and eligibility rules
+Scope by Company, Section, Department, Employee Grade, Employment Type, and Location
+Active/Inactive status control
+Visit Application
+Employee self-service gate pass application for planned absences or outings
+Select visit type, date, time, and reason
+Scan Visit
+Gate officer scans and records employee exit/entry using QR code or ID
+Real-time gate pass validation
+Visit Request
+Manager approval inbox for pending gate pass requests
+Multi-level approval with action history
+Visit History
+Full log of all gate pass events per employee
+Filter by company, employee, visit type, and date range
+
+
+
+14. Meal Pass
+The Meal Pass module manages canteen meal entitlements and consumption tracking for employees at facility cafeterias.
+
+Sub-Module
+Key Features
+Meal Management
+Record and track daily meal passes issued to employees
+Supports canteen reports: Meal Canteen Report, Meal Attendance Report, Meal Summary
+Integration with employee attendance for automated meal eligibility
+
+15. Resign (Offboarding)
+The Resign module manages the end-to-end employee resignation process, from policy definition to application submission, managerial approval, and historical record.
+
+Sub-Module
+Key Features
+Resign Policy
+Define resignation policies per Company, Section, and Department
+Configure Notice Period (in days) and applicability rules
+Active/Inactive status management
+Resign Application
+Employee self-service resignation form
+Submit last working day preference and resignation reason
+Resign Request
+HR/Manager inbox for pending resignation requests
+Accept or reject with remarks
+Trigger Final Settlement process upon acceptance
+Resign History
+Complete audit trail of all processed resignation requests
+Filter by company, department, status, and date range
+
+
+16. Utilities
+The Utilities module houses batch processing tools used by payroll and HR administrators to execute system-level operations.
+
+Sub-Module
+Key Features
+Process Attendance
+Batch-process raw attendance punch data into computed attendance records
+Run for selected company, month, and employee scope
+Payslip Raw Data
+Extract raw payslip data for external integration or reconciliation
+Used before payslip publication for data validation
+Publish Payroll
+Make processed payslips visible to employees in their self-service portal
+Controlled publish action ensures employees only see finalised payslips
+
+17. Reports
+The Reports module provides a comprehensive set of pre-built operational reports across attendance, meals, gate pass, and other HR functions.
+17.1 Attendance Reports
+Sub-Module
+Key Features
+Attendance Reports
+Daily Absenteeism Report — employees absent on a given day
+Daily Strength Report — headcount present vs. approved
+Daily Man Hours Report — total productive hours per day
+Monthly Absenteeism Report — absence trends over a month
+Attendance Register — full monthly attendance grid per employee
+Time Sheet — detailed in/out time records
+Attendance Summary — aggregate attendance statistics
+Attendance-Leave Register — combined view of attendance and leave
+Leave Balance Report — remaining leave entitlements per employee
+
+17.2 Meal Reports
+Sub-Module
+Key Features
+Meal Reports
+Meal Canteen Report — canteen utilisation by meal type
+Meal Attendance Report — employee-level meal consumption
+Meal Summary — aggregated meal counts by period
+
+
+17.3 Gate Pass Reports
+Sub-Module
+Key Features
+Gate Pass Reports
+Visit Report — comprehensive log of all gate pass events
+
+17.4 Other Reports
+Sub-Module
+Key Features
+Other Reports
+Costing Report — labour cost breakdown by department and project
+Employee Card — printable employee ID card with configurable fields
+Detail of Invoice Report — client invoicing detail with cost allocation
+18. Logs
+The Logs module provides system administrators with visibility into application-level error events for troubleshooting and audit purposes.
+
+Sub-Module
+Key Features
+Mobile Error Logs
+View errors generated by the Prime HR mobile application
+Filter by date, user, and error type
+Supports debugging of field attendance issues
+
+
+19. Setup
+The Setup module is the master data configuration hub. It contains all foundational reference data that the rest of the system depends upon.
+
+Sub-Module
+Key Features
+Company
+Register and manage company profiles with full legal, financial, and contact details
+Multi-company support with independent configuration per entity
+Employee Master
+Comprehensive employee record with 20+ data tabs: Personal, Employment, Salary, Documents, Emergency Contacts, Bank Details, Skills, Education, Family, Visa, Insurance, and more
+Advanced filter, Smart Filter, Export MIS, and bulk Upload functionality
+Active/Inactive employee toggle
+Organisation Structure
+Department, Designation, Designation Category, Group of Department, Section configuration
+Region, Location/Branch, Head management
+Employee Grade and Employee Attribute definitions
+Geography
+Country, State, City, and Region master lists
+Origin / Emirates classification for UAE-specific requirements
+Job Emirates configuration
+HR Reference Data
+Religion, Relation, Language, Skills, Nationality, Employee Status
+Type of Leaving, Ticket Frequency, Visa Designation
+Insurance Company and Insurance Given By configurations
+Workmen Compensation and Group Life insurance setup
+Financial References
+Bank and Bank Branch master
+Currency setup (multi-currency support)
+Labour Card Issuance configuration
+OH Card management
+Vendor
+Vendor / supplier master data for procurement
+Contact details, payment terms, and linked company
+Procurement Items
+Item and Item Category master for assets and procurement
+System Configuration
+Notification setup and delivery preferences
+Terms and Conditions document management
+Tags and Tags Category for flexible data labelling
+Attendance Machine registration and configuration
+Employee Card Config — define layout and fields for printable ID cards
+
+
+20. Config
+The Config module holds system-level classification tables that drive dropdown options across the application.
+
+Sub-Module
+Key Features
+Employment Type
+Define employment categories: Permanent, Contractual, Daily Wager, etc.
+Used across Attendance, Leave, and Payroll filtering
+Gender
+Manage gender classification options for employee profiles
+21. Security
+The Security module is the access control engine of Prime HR, enabling fine-grained control over which users can see or do what across every page of the application.
+
+Sub-Module
+Key Features
+Permission
+Define page-level permission sets
+Grant or restrict Read, Write, Edit, Delete, and Approve actions per page
+Named permission profiles that can be reused across roles
+Role
+Create roles (e.g., HR Manager, Payroll Officer, Department Head) by bundling permission sets
+Assign one or more roles to users
+User
+Register system users and link them to employee records
+Assign roles and active/inactive status
+Password reset and account management
+
+
+22. Onboarding
+The Onboarding module manages the pre-joining process for new hires, from offer letter generation to candidate acceptance.
+
+Sub-Module
+Key Features
+Offer Form Template
+Design company-specific offer letter forms with configurable field sets
+Multiple templates per company (e.g., for different grades or business units)
+Create Offer
+Generate a formal offer letter for a selected candidate
+Populate offer details: salary, joining date, designation, location
+Offer Approval
+Submit generated offer letters through a multi-level approval chain
+Approved offers can be shared with candidates for acceptance
+23. General Setting
+The General Setting module provides cross-cutting configuration options that govern system-wide behaviour, communication, and approval workflows.
+
+Sub-Module
+Key Features
+Approval Hierarchy
+Define multi-level approval chains for Leave, Payroll, Advance/Loan, Resign, Assets, and other workflows
+Configure approver levels, escalation rules, and delegation
+Employee Communication
+Broadcast announcements or messages to selected employee groups
+Filter recipients by company, department, grade, or location
+Supports multiple communication channels (in-app, email)
+User Group Employees
+Create user groups for bulk notification or communication targeting
+Assign employees to groups for efficient message distribution
+Letter Type
+Define HR letter categories (Experience Letter, Warning Letter, Promotion Letter, etc.)
+Setup Email Template
+Design dynamic email templates for automated system notifications
+Use placeholder variables for personalised content
+Setup Letter Template
+Create formatted HR letter templates for printing
+Rich text editor with logo and signature support
+
+
+
+Summary: Module Index
+The table below provides a quick-reference index of all Prime HR modules.
+
+#
+Module
+Primary Purpose
+1
+Dashboard
+Real-time HR KPIs and self-service overview for admins and employees
+2
+Personal
+Employee access to company policy, payslips, and tax certificates
+3
+Employee Queries
+HR review and approval of employee profile update requests
+4
+Attendance
+End-to-end time and attendance management with biometric and mobile support
+5
+Leave Management
+Leave policy, public holidays, employee applications, and approvals
+6
+Payroll Management
+Full-cycle payroll processing, WPS filing, settlement, and reporting
+7
+Geo Fencing
+Location-based attendance validation and employee route tracking
+8
+Advance / Loan
+Employee financial assistance requests with policy-driven approvals
+9
+Document Archiving
+Digital document repository with policy-based collection rules
+10
+Assets Management
+Asset lifecycle from requisition and approval to assignment and inventory
+11
+Procurement
+Purchase order management and vendor coordination
+12
+Appraisal
+KPI-based employee performance evaluation framework
+13
+Gate Pass
+Facility entry/exit control with visit type policies and scan verification
+14
+Meal Pass
+Canteen meal entitlement tracking and reporting
+15
+Resign / Offboarding
+Resignation workflow from application to final settlement trigger
+16
+Utilities
+Batch processing tools for attendance computation and payslip publishing
+17
+Reports
+Pre-built HR, Payroll, Attendance, Meal, and Gate Pass reports
+18
+Logs
+Mobile application error logging for system troubleshooting
+19
+Setup
+Master data configuration for all reference entities in the system
+20
+Config
+System-level classification tables (Employment Type, Gender)
+21
+Security
+Role-based access control with permission, role, and user management
+22
+Onboarding
+Pre-joining offer letter generation and approval workflow
+23
+General Setting
+Approval hierarchies, communications, and email/letter templates
