@@ -18,14 +18,7 @@ export const Navbar = ({ onOpenDemoModal }) => {
       <div className="container navbar-container">
         {/* Brand Logo */}
         <a href="#" className="brand-logo">
-          <div className="logo-icon">
-            <Shield size={22} className="logo-shield" />
-            <div className="logo-dot"></div>
-          </div>
-          <div className="logo-text">
-            <span className="brand-title">Binaryaxon</span>
-            <span className="brand-subtitle">HRMS SYSTEM</span>
-          </div>
+          <img src="/Logo_new1.png" alt="Binaryaxon" className="brand-logo-img" />
         </a>
 
         {/* Desktop Nav Links */}

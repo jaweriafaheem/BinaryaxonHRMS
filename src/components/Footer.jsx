@@ -27,13 +27,7 @@ export const Footer = ({ onOpenDemoModal }) => {
           {/* Brand Col */}
           <div className="footer-brand-col">
             <a href="#" className="brand-logo mb-3">
-              <div className="logo-icon">
-                <Shield size={22} className="logo-shield" />
-              </div>
-              <div className="logo-text">
-                <span className="brand-title">Binaryaxon</span>
-                <span className="brand-subtitle">HRMS SYSTEM</span>
-              </div>
+              <img src="/Logo_new1.png" alt="Binaryaxon" className="brand-logo-img" />
             </a>
             <p className="footer-brand-desc">
               Prime HR – Intelligent by Design. The ultimate cloud Human Resource Management System for multi-company, multi-location enterprises.

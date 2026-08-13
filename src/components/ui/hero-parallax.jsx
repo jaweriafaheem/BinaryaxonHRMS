@@ -157,7 +157,7 @@ export const Header = ({ onExploreClick, onDemoClick }) => {
   return (
     <div className="hero-parallax-header">
       <div className="hero-parallax-grid">
-        
+
         {/* Left Side: Copy & Actions */}
         <div className="hero-parallax-left">
           <div className="badge mb-3">
@@ -176,7 +176,7 @@ export const Header = ({ onExploreClick, onDemoClick }) => {
               <span>Explore All 23 Modules</span>
               <ArrowRight size={18} />
             </button>
-            
+
             <button className="btn btn-secondary btn-lg" onClick={onDemoClick}>
               <Play size={16} className="play-icon" />
               <span>Interactive Live Demo</span>
