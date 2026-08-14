@@ -111,8 +111,6 @@ export const WhyChooseUs = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, type: "spring", stiffness: 180 }}
             >
-              <div className="why-avatar-base-circle"></div>
-              <div className="avatar-ring-glow"></div>
               <motion.img 
                 src="/blue_cartoon_thinking_question_mark.png" 
                 alt="3D Blue Cartoon Thinking Character Leaning on Question Mark" 
