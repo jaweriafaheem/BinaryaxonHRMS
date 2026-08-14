@@ -34,21 +34,7 @@ export const HeroSection = ({ onExploreClick, onDemoClick }) => {
             </button>
           </div>
 
-          {/* Key Value Bullets */}
-          <div className="hero-highlights">
-            <div className="highlight-item">
-              <CheckCircle2 size={16} className="text-accent" />
-              <span>Multi-Company & Branch Isolation</span>
-            </div>
-            <div className="highlight-item">
-              <CheckCircle2 size={16} className="text-accent" />
-              <span>Biometric & GPS Geofencing</span>
-            </div>
-            <div className="highlight-item">
-              <CheckCircle2 size={16} className="text-accent" />
-              <span>100% WPS & Tax Compliant</span>
-            </div>
-          </div>
+
         </div>
 
         {/* Right Column: Hero Interactive UI Mockup */}
