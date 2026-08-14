@@ -16,17 +16,11 @@ export const App = () => {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
 
   const handleExploreClick = () => {
-    const modulesSec = document.getElementById('modules');
-    if (modulesSec) {
-      modulesSec.scrollIntoView({ behavior: 'smooth' });
-    }
+    setIsDemoModalOpen(true);
   };
 
   const handleLiveDemoClick = () => {
-    const demoSec = document.getElementById('live-demo');
-    if (demoSec) {
-      demoSec.scrollIntoView({ behavior: 'smooth' });
-    }
+    setIsDemoModalOpen(true);
   };
 
   return (
