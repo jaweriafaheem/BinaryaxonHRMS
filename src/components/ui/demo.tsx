@@ -2,13 +2,13 @@
 import React from "react";
 import { HeroParallax } from "./hero-parallax";
 
-export function HeroParallaxDemo() {
+export function HeroParallaxDemo({ onExploreClick, onDemoClick }) {
   return (
-    <div className="min-h-screen w-full">
-      <div className="absolute top-0 left-0 w-full">
-        <HeroParallax products={products} />
-      </div>
-    </div>
+    <HeroParallax 
+      products={products} 
+      onExploreClick={onExploreClick}
+      onDemoClick={onDemoClick}
+    />
   );
 }
 

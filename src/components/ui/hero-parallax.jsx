@@ -8,6 +8,7 @@ import {
   AnimatePresence
 } from "framer-motion";
 import { ArrowRight, Play, Zap, CheckCircle2, Layers, Cpu, Award, ShieldCheck } from "lucide-react";
+import { ShinyButton } from "./shiny-button";
 
 export const HeroParallax = ({ products, onExploreClick, onDemoClick }) => {
   const firstRow = products.slice(0, 5);
@@ -39,11 +40,11 @@ export const HeroParallax = ({ products, onExploreClick, onDemoClick }) => {
     springConfig
   );
   const rotateZ = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [15, 0]),
+    useTransform(scrollYProgress, [0, 0.2], [-10, 0]),
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-540, -60]),
+    useTransform(scrollYProgress, [0, 0.2], [-280, -40]),
     springConfig
   );
 
@@ -199,10 +200,10 @@ const GCCFlagSVG = ({ countryId }) => {
 export const GCCComplianceWidget = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  
+
   // Slide 0 State (Compliance)
   const [activeCountry, setActiveCountry] = useState("UAE");
-  
+
   // Slide 2 State (Payroll)
   const [salaryValue, setSalaryValue] = useState("142,067.00");
   const [isSalaryUpdated, setIsSalaryUpdated] = useState(false);
@@ -239,7 +240,7 @@ export const GCCComplianceWidget = () => {
   const selectedData = countries.find(c => c.id === activeCountry) || countries[0];
 
   return (
-    <div 
+    <div
       className="gcc-widget-container"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
@@ -251,7 +252,7 @@ export const GCCComplianceWidget = () => {
 
       {/* Main Interactive Widget */}
       <div className={`gcc-compliance-panel theme-${currentSlide}`}>
-        
+
         {/* Slide Indicator Badge */}
         <div className={`gcc-badge-slider theme-${currentSlide}`} key={`badge-${currentSlide}`}>
           <span className="gcc-panel-icon">{slides[currentSlide].badgeIcon}</span>
@@ -261,7 +262,7 @@ export const GCCComplianceWidget = () => {
         {/* Content Box with Dynamic Transitions */}
         <div className="gcc-card-dynamic-area">
           <AnimatePresence mode="wait">
-            
+
             {/* Slide 0: Local Compliance */}
             {currentSlide === 0 && (
               <motion.div
@@ -273,10 +274,10 @@ export const GCCComplianceWidget = () => {
                 className="gcc-card-content"
               >
                 <div className="gcc-search-box">
-                  <input 
-                    type="text" 
-                    placeholder="Search by Country" 
-                    className="gcc-search-input" 
+                  <input
+                    type="text"
+                    placeholder="Search by Country"
+                    className="gcc-search-input"
                     disabled
                   />
                   <span className="gcc-search-icon">🔍</span>
@@ -372,10 +373,10 @@ export const GCCComplianceWidget = () => {
                     <label>Annual Salary</label>
                     <div className="salary-input-wrapper">
                       <span className="currency-lbl">AED</span>
-                      <input 
-                        type="text" 
-                        value={salaryValue} 
-                        onChange={(e) => setSalaryValue(e.target.value)} 
+                      <input
+                        type="text"
+                        value={salaryValue}
+                        onChange={(e) => setSalaryValue(e.target.value)}
                         className="salary-field"
                       />
                     </div>
@@ -386,8 +387,8 @@ export const GCCComplianceWidget = () => {
                   </div>
                 </div>
 
-                <button 
-                  onClick={handleUpdateSalary} 
+                <button
+                  onClick={handleUpdateSalary}
                   className={`btn-update-salary mt-2 ${isSalaryUpdated ? 'success' : ''}`}
                 >
                   {isSalaryUpdated ? "Salary Updated! ✓" : "Update Salary"}
@@ -427,17 +428,17 @@ export const Header = ({ onExploreClick, onDemoClick }) => {
             <span>#1 HR & PAYROLL SOFTWARE IN THE REGION</span>
           </div>
           <h2>
-            HR & Payroll Software <br /> Built for the <span className="text-gradient">UAE & GCC</span>
+            HR & Payroll Software <br /> Built for the <span className="text-gradient">All</span>
           </h2>
           <p className="hero-description">
             Streamline every HR process through powerful cloud HR technology. Consolidate multi-company workforce management, biometric attendance, WPS payroll, GPS geofencing, and digital document workflows in one platform.
           </p>
 
           <div className="hero-actions mt-4">
-            <button className="btn btn-primary btn-lg" onClick={onExploreClick}>
+            <ShinyButton onClick={onExploreClick}>
               <span>Schedule a Demo</span>
               <ArrowRight size={18} />
-            </button>
+            </ShinyButton>
 
             <button className="btn btn-secondary btn-lg" onClick={onDemoClick}>
               <Play size={16} className="play-icon" />
@@ -450,7 +451,6 @@ export const Header = ({ onExploreClick, onDemoClick }) => {
 
         {/* Right Side: Interactive Compliance Widget */}
         <div className="hero-parallax-right">
-          <GCCComplianceWidget />
         </div>
 
       </div>

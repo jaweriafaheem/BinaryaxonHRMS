@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Shield, Sparkles, Menu, X } from 'lucide-react';
+import { ShinyButton } from './ui/shiny-button';
 
 export const Navbar = ({ onOpenDemoModal }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -33,10 +34,10 @@ export const Navbar = ({ onOpenDemoModal }) => {
 
         {/* Actions */}
         <div className="nav-actions">
-          <button className="btn btn-primary" onClick={onOpenDemoModal}>
+          <ShinyButton onClick={onOpenDemoModal}>
             <Sparkles size={16} />
             <span>Book Live Demo</span>
-          </button>
+          </ShinyButton>
 
           {/* Mobile Hamburger */}
           <button 
@@ -58,9 +59,9 @@ export const Navbar = ({ onOpenDemoModal }) => {
           <a href="#security" onClick={() => setMobileMenuOpen(false)}>Security</a>
           <a href="#faq" onClick={() => setMobileMenuOpen(false)}>FAQ</a>
           <div className="mobile-actions">
-            <button className="btn btn-primary w-full" onClick={() => { setMobileMenuOpen(false); onOpenDemoModal(); }}>
+            <ShinyButton className="w-full" onClick={() => { setMobileMenuOpen(false); onOpenDemoModal(); }}>
               Book Live Demo
-            </button>
+            </ShinyButton>
           </div>
         </div>
       )}

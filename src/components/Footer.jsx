@@ -1,98 +1,78 @@
 import React from 'react';
-import { Shield, Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
+import { Linkedin, Facebook, Youtube } from 'lucide-react';
 
-export const Footer = ({ onOpenDemoModal }) => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
+export const Footer = () => {
   return (
-    <footer className="footer-section">
+    <footer className="custom-footer">
       <div className="container">
-        
-        {/* Top CTA Banner */}
-        <div className="footer-cta-banner glass-panel">
-          <div>
-            <h2>Ready to Transform Your HR & Payroll Operations?</h2>
-            <p>Join modern enterprises using Binaryaxon HRMS for 23+ integrated HR modules.</p>
-          </div>
-          <button className="btn btn-primary btn-lg" onClick={onOpenDemoModal}>
-            Schedule Live Demo Today
-          </button>
-        </div>
-
-        {/* Main Footer Links Grid */}
-        <div className="footer-grid">
+        <div className="custom-footer-grid">
           
-          {/* Brand Col */}
-          <div className="footer-brand-col">
-            <a href="#" className="brand-logo mb-3">
-              <img src="/Logo_new1.png" alt="Binaryaxon" className="brand-logo-img" />
+          {/* Left Column: Brand & Social */}
+          <div className="footer-brand-side">
+            <a href="#" className="brand-logo mb-2">
+              <img src="/Logo_new1.png" alt="binaryaxon" className="brand-logo-img" />
             </a>
-            <p className="footer-brand-desc">
-              Prime HR – Intelligent by Design. The ultimate cloud Human Resource Management System for multi-company, multi-location enterprises.
-            </p>
-            <div className="footer-contact-info">
-              <div className="contact-item"><Mail size={14} /> support@binaryaxon.com</div>
-              <div className="contact-item"><Phone size={14} /> +92 300 0800498</div>
-              <div className="contact-item"><MapPin size={14} /> Enterprise HR Solutions Hub</div>
+            <p className="constellation-subtext">a subsidiary of Constellation Software Inc.</p>
+            <div className="footer-social-icons">
+              <a 
+                href="https://www.linkedin.com/company/binaryaxon" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-icon-btn linkedin"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={16} />
+              </a>
+              <a 
+                href="https://www.facebook.com/binaryaxon" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-icon-btn facebook"
+                aria-label="Facebook"
+              >
+                <Facebook size={16} />
+              </a>
+              <a 
+                href="https://www.youtube.com/@binaryaxon1581" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-icon-btn youtube"
+                aria-label="YouTube"
+              >
+                <Youtube size={16} />
+              </a>
             </div>
           </div>
 
-          {/* Module Categories */}
-          <div className="footer-col">
-            <h4>Core HR Modules</h4>
-            <ul>
-              <li><a href="#modules">1. Dashboard (KPIs)</a></li>
-              <li><a href="#modules">2. Personal (Self-Service)</a></li>
-              <li><a href="#modules">3. Employee Queries</a></li>
-              <li><a href="#modules">5. Leave Management</a></li>
-              <li><a href="#modules">12. Appraisal & Performance</a></li>
-              <li><a href="#modules">15. Resign / Offboarding</a></li>
-              <li><a href="#modules">22. Candidate Onboarding</a></li>
-            </ul>
-          </div>
-
-          {/* Payroll & Operations */}
-          <div className="footer-col">
-            <h4>Workforce & Finance</h4>
-            <ul>
-              <li><a href="#modules">4. Time & Attendance</a></li>
-              <li><a href="#modules">6. WPS Payroll Engine</a></li>
-              <li><a href="#modules">7. GPS Geo Fencing</a></li>
-              <li><a href="#modules">8. Advance / Loan Ledger</a></li>
-              <li><a href="#modules">9. Document Archiving</a></li>
-              <li><a href="#modules">10. Assets Management</a></li>
-              <li><a href="#modules">13. Security Gate Pass</a></li>
-              <li><a href="#modules">14. Canteen Meal Pass</a></li>
-            </ul>
-          </div>
-
-          {/* Governance & Master Data */}
-          <div className="footer-col">
-            <h4>Governance & Setup</h4>
-            <ul>
-              <li><a href="#modules">16. Utilities & Batch Engine</a></li>
-              <li><a href="#modules">17. 30+ Standard Reports</a></li>
-              <li><a href="#modules">18. Mobile App Error Logs</a></li>
-              <li><a href="#modules">19. Setup (Multi-Company)</a></li>
-              <li><a href="#modules">21. Page Permission Security</a></li>
-              <li><a href="#modules">23. General Setting & Letters</a></li>
-            </ul>
+          {/* Right Column: Menu & Description */}
+          <div className="footer-menu-side">
+            <div className="footer-menu-row">
+              <a href="#overview" className="footer-menu-link">Overview</a>
+              <a href="#modules" className="footer-menu-link">23 Modules</a>
+              <a href="#live-demo" className="footer-menu-link">Interactive Demo</a>
+              <a href="#roi-calculator" className="footer-menu-link">ROI Calculator</a>
+              <a href="#security" className="footer-menu-link">Security</a>
+              <a href="#faq" className="footer-menu-link">FAQ</a>
+            </div>
+            
+            <p className="footer-desc-text">
+              Binary Axon provides a wealth of technical and business expertise to its customers, transforming ideas into tech reality with scalable software solutions since 2020.
+            </p>
+            
+            <a href="mailto:info@binaryaxon.com" className="footer-email-link">
+              info@binaryaxon.com
+            </a>
           </div>
 
         </div>
 
         {/* Bottom Bar */}
-        <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} Binaryaxon HRMS System. All rights reserved. Designed with CSS `:root` Theme System.</p>
-          <button className="back-to-top-btn" onClick={scrollToTop} title="Back to Top">
-            <span>Top</span>
-            <ArrowUp size={16} />
-          </button>
+        <div className="custom-footer-bottom">
+          <p>Copyright © 2020 to 2026 www.BinaryAxon.com All rights reserved.</p>
         </div>
-
       </div>
     </footer>
   );
 };
+
+export default Footer;
