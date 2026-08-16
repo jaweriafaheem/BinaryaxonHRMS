@@ -6,6 +6,7 @@ import { StatsBanner } from './components/StatsBanner';
 import { InteractiveDemo } from './components/InteractiveDemo';
 import { ROICalculator } from './components/ROICalculator';
 import { WhyChooseUs } from './components/WhyChooseUs';
+import { HRMadeSimple } from './components/HRMadeSimple';
 import { DoubleWins } from './components/DoubleWins';
 import { SecurityCompliance } from './components/SecurityCompliance';
 import { TestimonialsFAQ } from './components/TestimonialsFAQ';
@@ -37,6 +38,7 @@ export const App = () => {
         <InteractiveDemo />
         <ROICalculator onOpenDemoModal={() => setIsDemoModalOpen(true)} />
         <WhyChooseUs />
+        <HRMadeSimple />
         <DoubleWins />
         <SecurityCompliance />
         <TestimonialsFAQ />

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+      <rect width="800" height="550" fill="#0a0b10" />
+      <rect x="50" y="50" width="700" height="450" rx="16" fill="#1b1c24" stroke="#2e303d" stroke-width="2" />
+      
+      <rect x="90" y="120" width="280" height="130" rx="10" fill="#232530" />
+      <text x="120" y="165" fill="#ffffff" font-family="system-ui" font-size="16" font-weight="bold">💻 Apple MacBook Pro</text>
+      <text x="120" y="195" fill="#a3a3a3" font-family="system-ui" font-size="13">Serial: C02CG921MD6M</text>
+      <text x="120" y="222" fill="#10b981" font-family="system-ui" font-size="12">Status: Assigned</text>
+      
+      <rect x="390" y="120" width="280" height="130" rx="10" fill="#232530" />
+      <text x="420" y="165" fill="#ffffff" font-family="system-ui" font-size="16" font-weight="bold">📱 iPhone 14 Pro Max</text>
+      <text x="420" y="195" fill="#a3a3a3" font-family="system-ui" font-size="13">Serial: DNXF982HN9K0</text>
+      <text x="420" y="222" fill="#10b981" font-family="system-ui" font-size="12">Status: Assigned</text>
+      
+      <rect x="90" y="270" width="580" height="140" rx="10" fill="#232530" stroke="#b180ff" stroke-width="1.5" />
+      <text x="120" y="315" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="bold">Asset Allocations Checklist &amp; Custody Docs</text>
+      <text x="120" y="342" fill="#b180ff" font-family="system-ui" font-size="13">✓ Serial matches scanned IT inventory log</text>
+      <text x="120" y="369" fill="#b180ff" font-family="system-ui" font-size="13">✓ Custody form signed &amp; filed in vault module</text>
+    </svg>

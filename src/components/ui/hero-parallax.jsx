@@ -32,7 +32,7 @@ export const HeroParallax = ({ products, onExploreClick, onDemoClick }) => {
     springConfig
   );
   const rotateX = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [15, 0]),
+    useTransform(scrollYProgress, [0, 0.2], [20, 0]),
     springConfig
   );
   const opacity = useSpring(
@@ -40,11 +40,11 @@ export const HeroParallax = ({ products, onExploreClick, onDemoClick }) => {
     springConfig
   );
   const rotateZ = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-10, 0]),
+    useTransform(scrollYProgress, [0, 0.2], [-20, 0]),
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-280, -40]),
+    useTransform(scrollYProgress, [0, 0.2], [-520, -50]),
     springConfig
   );
 
@@ -423,7 +423,7 @@ export const Header = ({ onExploreClick, onDemoClick }) => {
 
         {/* Left Side: Copy & Actions */}
         <div className="hero-parallax-left">
-          <div className="badge mb-3">
+          <div className="badge hero-badge mb-3">
             <Zap size={14} />
             <span>#1 HR & PAYROLL SOFTWARE IN THE REGION</span>
           </div>
@@ -440,7 +440,7 @@ export const Header = ({ onExploreClick, onDemoClick }) => {
               <ArrowRight size={18} />
             </ShinyButton>
 
-            <button className="btn btn-secondary btn-lg" onClick={onDemoClick}>
+            <button className="btn-tour-pill" onClick={onDemoClick}>
               <Play size={16} className="play-icon" />
               <span>Product Tour</span>
             </button>

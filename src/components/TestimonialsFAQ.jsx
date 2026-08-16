@@ -62,17 +62,32 @@ export const TestimonialsFAQ = () => {
           <div className="testimonials-grid">
             {testimonials.map((t, idx) => (
               <div key={idx} className="testimonial-card glass-panel">
-                <Quote size={28} className="quote-icon text-accent" />
+                <div className="testimonial-header">
+                  <div className="testimonial-avatar">
+                    {t.author.split(' ').map(n => n[0]).join('')}
+                  </div>
+                  <div className="testimonial-rating">
+                    <div className="stars-row">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} size={15} fill="#f59e0b" color="#f59e0b" className="star-icon" />
+                      ))}
+                    </div>
+                    <span className="verified-badge">Verified Company Client</span>
+                  </div>
+                </div>
+
                 <p className="testimonial-text">"{t.quote}"</p>
-                <div className="stars-row">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={16} fill="var(--color-warning)" color="var(--color-warning)" />
-                  ))}
-                </div>
+
                 <div className="author-info">
-                  <div className="author-name">{t.author}</div>
-                  <div className="author-role">{t.role} • {t.company}</div>
+                  <div className="author-details">
+                    <div className="author-name">{t.author}</div>
+                    <div className="author-role">{t.role}</div>
+                  </div>
+                  <div className="company-badge">
+                    <span>{t.company}</span>
+                  </div>
                 </div>
+                <Quote size={80} className="testimonial-background-quote" />
               </div>
             ))}
           </div>

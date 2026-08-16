@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+      <rect width="800" height="550" fill="#0a0b10" />
+      <rect x="50" y="50" width="700" height="450" rx="16" fill="#1b1c24" stroke="#2e303d" stroke-width="2" />
+      
+      <rect x="90" y="110" width="620" height="320" rx="12" fill="#232530" />
+      <text x="120" y="155" fill="#ffffff" font-family="system-ui" font-size="20" font-weight="bold">Purchase Requests &amp; Invoices</text>
+      
+      <circle cx="130" cy="220" r="16" fill="#10b981" />
+      <text x="124" y="225" fill="#ffffff" font-family="system-ui" font-size="14">✓</text>
+      <text x="170" y="215" fill="#ffffff" font-family="system-ui" font-size="15" font-weight="bold">Request #PR-9208 (IT Purchases)</text>
+      <text x="170" y="235" fill="#a3a3a3" font-family="system-ui" font-size="12">Approved by HOD Finance</text>
+      
+      <circle cx="130" cy="290" r="16" fill="#f59e0b" />
+      <text x="125" y="295" fill="#ffffff" font-family="system-ui" font-size="14">⏰</text>
+      <text x="170" y="285" fill="#ffffff" font-family="system-ui" font-size="15" font-weight="bold">Vendor Invoice #INV-109287</text>
+      <text x="170" y="305" fill="#a3a3a3" font-family="system-ui" font-size="12">Awaiting Bank Transfer Release (AED 195,450.00)</text>
+      
+      <circle cx="130" cy="360" r="16" fill="#2e303d" />
+      <text x="170" y="355" fill="#ffffff" font-family="system-ui" font-size="15" font-weight="bold">Supplier Profile Setup: Constellation Hardware LLC</text>
+      <text x="170" y="375" fill="#a3a3a3" font-family="system-ui" font-size="12">Tax TRN Registered &amp; Verified</text>
+    </svg>

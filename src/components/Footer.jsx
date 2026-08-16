@@ -10,7 +10,7 @@ export const Footer = () => {
           {/* Left Column: Brand & Social */}
           <div className="footer-brand-side">
             <a href="#" className="brand-logo mb-2">
-              <img src="/Logo_new1.png" alt="binaryaxon" className="brand-logo-img" />
+              <img src="/Binary_Axon_logo_2307.webp" alt="binaryaxon" className="brand-logo-img" />
             </a>
             <p className="constellation-subtext">a subsidiary of Constellation Software Inc.</p>
             <div className="footer-social-icons">
