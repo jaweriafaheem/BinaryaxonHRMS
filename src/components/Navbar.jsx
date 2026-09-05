@@ -62,8 +62,8 @@ export const Navbar = ({ onOpenDemoModal }) => {
           <a href="#live-demo" onClick={() => setMobileMenuOpen(false)}>Live Demo</a>
           <a href="#roi-calculator" onClick={() => setMobileMenuOpen(false)}>ROI Calculator</a>
           <a href="#security" onClick={() => setMobileMenuOpen(false)}>Security</a>
-          <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</a>
-          <a href="#faq" onClick={() => setMobileMenuOpen(false)}>FAQ</a>
+          {/* <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+          <a href="#faq" onClick={() => setMobileMenuOpen(false)}>FAQ</a> */}
           <div className="mobile-actions">
             <ShinyButton className="w-full" onClick={() => { setMobileMenuOpen(false); onOpenDemoModal(); }}>
               Book Live Demo
