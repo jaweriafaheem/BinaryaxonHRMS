@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+      <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#0a0b10" />
+          <stop offset="100%" stop-color="#12131a" />
+        </linearGradient>
+        <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#00f2fe" />
+          <stop offset="100%" stop-color="#4facfe" />
+        </linearGradient>
+      </defs>
+      <rect width="800" height="550" fill="url(#bg)" />
+      <rect x="50" y="50" width="700" height="450" rx="16" fill="#1b1c24" stroke="#2e303d" stroke-width="2" />
+      <circle cx="85" cy="80" r="8" fill="#ff5f56" />
+      <circle cx="105" cy="80" r="8" fill="#ffbd2e" />
+      <circle cx="125" cy="80" r="8" fill="#27c93f" />
+      
+      <rect x="80" y="130" width="200" height="150" rx="10" fill="#232530" stroke="#00f2fe" stroke-width="1.5" />
+      <text x="100" y="170" fill="#ffffff" font-family="system-ui" font-size="16" font-weight="bold">Total Employees</text>
+      <text x="100" y="225" fill="#00f2fe" font-family="system-ui" font-size="36" font-weight="heavy">1,248</text>
+      <text x="100" y="255" fill="#10b981" font-family="system-ui" font-size="12">+12% this month</text>
+      
+      <rect x="300" y="130" width="420" height="150" rx="10" fill="#232530" />
+      <path d="M 330 240 Q 380 180, 430 210 T 530 160 T 630 190 T 700 150" fill="none" stroke="url(#accent)" stroke-width="4" />
+      
+      <rect x="80" y="300" width="310" height="170" rx="10" fill="#232530" />
+      <circle cx="235" cy="385" r="50" fill="none" stroke="#2e303d" stroke-width="16" />
+      <circle cx="235" cy="385" r="50" fill="none" stroke="#b180ff" stroke-width="16" stroke-dasharray="210 320" />
+      
+      <rect x="410" y="300" width="310" height="170" rx="10" fill="#232530" />
+      <rect x="440" y="335" width="250" height="12" rx="6" fill="#2e303d" />
+      <rect x="440" y="335" width="180" height="12" rx="6" fill="#00f2fe" />
+      <rect x="440" y="375" width="250" height="12" rx="6" fill="#2e303d" />
+      <rect x="440" y="375" width="120" height="12" rx="6" fill="#b180ff" />
+      <rect x="440" y="415" width="250" height="12" rx="6" fill="#2e303d" />
+      <rect x="440" y="415" width="215" height="12" rx="6" fill="#10b981" />
+    </svg>

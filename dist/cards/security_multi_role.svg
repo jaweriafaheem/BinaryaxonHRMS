@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+      <rect width="800" height="550" fill="#0a0b10" />
+      <rect x="50" y="50" width="700" height="450" rx="16" fill="#1b1c24" stroke="#2e303d" stroke-width="2" />
+      
+      <rect x="90" y="110" width="620" height="320" rx="12" fill="#232530" />
+      <text x="120" y="155" fill="#ffffff" font-family="system-ui" font-size="20" font-weight="bold">Security Shield &amp; Role Grid</text>
+      
+      <line x1="120" y1="175" x2="680" y2="175" stroke="#2e303d" stroke-width="1" />
+      
+      <text x="120" y="215" fill="#a3a3a3" font-family="system-ui" font-size="12">HR Role Title</text>
+      <text x="300" y="215" fill="#a3a3a3" font-family="system-ui" font-size="12">WPS SIF Access</text>
+      <text x="480" y="215" fill="#a3a3a3" font-family="system-ui" font-size="12">Vault View Permissions</text>
+      
+      <text x="120" y="265" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="bold">Main Admin</text>
+      <text x="300" y="265" fill="#10b981" font-family="system-ui" font-size="14" font-weight="bold">FULL Read/Write</text>
+      <text x="480" y="265" fill="#10b981" font-family="system-ui" font-size="14" font-weight="bold">FULL Access</text>
+      <line x1="120" y1="285" x2="680" y2="285" stroke="#2e303d" stroke-width="1" />
+      
+      <text x="120" y="325" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="bold">HR Assistant</text>
+      <text x="300" y="325" fill="#ff5f56" font-family="system-ui" font-size="14" font-weight="bold">No Access</text>
+      <text x="480" y="325" fill="#f59e0b" font-family="system-ui" font-size="14" font-weight="bold">Assigned Documents Only</text>
+      <line x1="120" y1="345" x2="680" y2="345" stroke="#2e303d" stroke-width="1" />
+    </svg>

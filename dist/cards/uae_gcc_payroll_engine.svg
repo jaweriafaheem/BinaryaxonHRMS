@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+      <rect width="800" height="550" fill="#0a0b10" />
+      <rect x="50" y="50" width="700" height="450" rx="16" fill="#1b1c24" stroke="#2e303d" stroke-width="2" />
+      
+      <rect x="90" y="110" width="620" height="320" rx="12" fill="#232530" />
+      <text x="120" y="155" fill="#ffffff" font-family="system-ui" font-size="20" font-weight="bold">UAE WPS SIF Generator</text>
+      <line x1="120" y1="175" x2="680" y2="175" stroke="#2e303d" stroke-width="1" />
+      
+      <text x="120" y="215" fill="#a3a3a3" font-family="system-ui" font-size="12">MOHRE WPS SIF Code</text>
+      <text x="320" y="215" fill="#a3a3a3" font-family="system-ui" font-size="12">Net Wages (AED)</text>
+      <text x="520" y="215" fill="#a3a3a3" font-family="system-ui" font-size="12">Status</text>
+      
+      <text x="120" y="265" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="bold">EMP2034982309</text>
+      <text x="320" y="265" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="bold">14,250.00</text>
+      <text x="520" y="265" fill="#10b981" font-family="system-ui" font-size="14" font-weight="bold">Ready to Export</text>
+      <line x1="120" y1="285" x2="680" y2="285" stroke="#2e303d" stroke-width="1" />
+      
+      <text x="120" y="325" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="bold">EMP2034982310</text>
+      <text x="320" y="325" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="bold">9,480.00</text>
+      <text x="520" y="325" fill="#10b981" font-family="system-ui" font-size="14" font-weight="bold">Ready to Export</text>
+      <line x1="120" y1="345" x2="680" y2="345" stroke="#2e303d" stroke-width="1" />
+      
+      <rect x="500" y="375" width="180" height="40" rx="6" fill="#10b981" />
+      <text x="532" y="399" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="bold">Export WPS File</text>
+    </svg>

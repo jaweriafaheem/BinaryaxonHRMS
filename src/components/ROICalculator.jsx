@@ -49,7 +49,7 @@ export const ROICalculator = ({ onOpenDemoModal }) => {
         <div className="section-header">
           <div className="badge">
             <Calculator size={14} className="text-accent" />
-            <span>ENTERPRISE ROI CALCULATOR</span>
+            <span>ENTERPRISE Pricing CALCULATOR</span>
           </div>
           <h2>Calculate Your <span className="text-gradient">Time & Cost Savings</span></h2>
           <p>
@@ -152,7 +152,7 @@ export const ROICalculator = ({ onOpenDemoModal }) => {
 
             {/* Results Display */}
             <div className="roi-results-pane glass-panel">
-              <h3 className="results-heading">Estimated ROI Summary</h3>
+              <h3 className="results-heading">Estimated Pricing Summary</h3>
 
               {/* pricing table breakdown */}
               <div className="price-breakdown-details">
@@ -202,27 +202,12 @@ export const ROICalculator = ({ onOpenDemoModal }) => {
                 </div>
               </div>
 
-              {/* Admin Savings Highlight */}
-              <div className="result-metric-card">
-                <div className="metric-icon">
-                  <Clock size={24} className="text-accent" />
-                </div>
-                <div>
-                  <div className="metric-label">Admin Time & Operating Savings</div>
-                  <div className="metric-val text-accent" style={{ fontSize: '1.3rem' }}>
-                    {totalHoursSavedMonthly.toLocaleString()} Hours / mo saved
-                  </div>
-                  <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
-                    Frees up estimated <strong>${adminSavingsAnnually.toLocaleString()} / year</strong> in HR operations cost
-                  </div>
-                </div>
-              </div>
 
               <div className="roi-cta-box">
                 <p>Ready to unlock these savings for your organization?</p>
                 <ShinyButton className="w-full" onClick={onOpenDemoModal}>
                   <Sparkles size={16} />
-                  <span>Request Custom ROI Breakdown</span>
+                  <span>Request Custom Pricing Breakdown</span>
                 </ShinyButton>
               </div>
             </div>

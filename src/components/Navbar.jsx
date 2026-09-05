@@ -25,10 +25,13 @@ export const Navbar = ({ onOpenDemoModal }) => {
         {/* Desktop Nav Links */}
         <nav className="desktop-nav">
           <a href="#overview" className="nav-link">Overview</a>
-          <a href="#modules" className="nav-link">23 Modules</a>
-          <a href="#live-demo" className="nav-link">Interactive Demo</a>
+          <a href="#process" className="nav-link">Process</a>
+          <a href="#roles" className="nav-link">Roles</a>
+          <a href="#reports" className="nav-link">Reports</a>
+          <a href="#live-demo" className="nav-link">Live Demo</a>
           <a href="#roi-calculator" className="nav-link">ROI Calculator</a>
           <a href="#security" className="nav-link">Security</a>
+          <a href="#contact" className="nav-link">Contact</a>
           <a href="#faq" className="nav-link">FAQ</a>
         </nav>
 
@@ -53,10 +56,13 @@ export const Navbar = ({ onOpenDemoModal }) => {
       {mobileMenuOpen && (
         <div className="mobile-nav-drawer glass-panel">
           <a href="#overview" onClick={() => setMobileMenuOpen(false)}>Overview</a>
-          <a href="#modules" onClick={() => setMobileMenuOpen(false)}>23 Modules</a>
-          <a href="#live-demo" onClick={() => setMobileMenuOpen(false)}>Interactive Demo</a>
+          <a href="#process" onClick={() => setMobileMenuOpen(false)}>Process</a>
+          <a href="#roles" onClick={() => setMobileMenuOpen(false)}>Roles</a>
+          <a href="#reports" onClick={() => setMobileMenuOpen(false)}>Reports</a>
+          <a href="#live-demo" onClick={() => setMobileMenuOpen(false)}>Live Demo</a>
           <a href="#roi-calculator" onClick={() => setMobileMenuOpen(false)}>ROI Calculator</a>
           <a href="#security" onClick={() => setMobileMenuOpen(false)}>Security</a>
+          <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</a>
           <a href="#faq" onClick={() => setMobileMenuOpen(false)}>FAQ</a>
           <div className="mobile-actions">
             <ShinyButton className="w-full" onClick={() => { setMobileMenuOpen(false); onOpenDemoModal(); }}>

@@ -50,7 +50,7 @@ export const Footer = () => {
               <a href="#overview" className="footer-menu-link">Overview</a>
               <a href="#modules" className="footer-menu-link">23 Modules</a>
               <a href="#live-demo" className="footer-menu-link">Interactive Demo</a>
-              <a href="#roi-calculator" className="footer-menu-link">ROI Calculator</a>
+              <a href="#roi-calculator" className="footer-menu-link">Pricing Calculator</a>
               <a href="#security" className="footer-menu-link">Security</a>
               <a href="#faq" className="footer-menu-link">FAQ</a>
             </div>

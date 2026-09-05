@@ -7,8 +7,12 @@ import { InteractiveDemo } from './components/InteractiveDemo';
 import { ROICalculator } from './components/ROICalculator';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { HRMadeSimple } from './components/HRMadeSimple';
+import { HRMSProcessSection } from './components/HRMSProcessSection';
 import { DoubleWins } from './components/DoubleWins';
+import { RolesPersonasSection } from './components/RolesPersonasSection';
+import { ReportsAnalyticsSection } from './components/ReportsAnalyticsSection';
 import { SecurityCompliance } from './components/SecurityCompliance';
+import { ContactSection } from './components/ContactSection';
 import { TestimonialsFAQ } from './components/TestimonialsFAQ';
 import { DemoModal } from './components/DemoModal';
 import { Footer } from './components/Footer';
@@ -36,11 +40,14 @@ export const App = () => {
           onDemoClick={handleLiveDemoClick} 
         />
         <InteractiveDemo />
+        <HRMSProcessSection />
         <ROICalculator onOpenDemoModal={() => setIsDemoModalOpen(true)} />
         <WhyChooseUs />
         <HRMadeSimple />
-        <DoubleWins />
+        <RolesPersonasSection />
+        <ReportsAnalyticsSection />
         <SecurityCompliance />
+        <ContactSection />
         <TestimonialsFAQ />
       </main>
 
