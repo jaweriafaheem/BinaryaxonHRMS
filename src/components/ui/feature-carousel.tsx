@@ -42,7 +42,7 @@ export const ROLES_PERSONAS: RolePersona[] = [
       "Fine-Grained Role-Based Access Control (RBAC)",
       "Full MIS, Labour Costing & Multi-Entity Reports"
     ],
-    themeColor: "#0284c7"
+    themeColor: "#7c3aed"
   },
   {
     id: "hrmanager",

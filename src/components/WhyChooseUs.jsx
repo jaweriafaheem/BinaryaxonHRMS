@@ -9,7 +9,7 @@ export const WhyChooseUs = () => {
       title: "Cost Effective",
       desc: "Save 40% overhead by consolidating 5 HR tools into one unified platform.",
       icon: TrendingUp,
-      color: "#0284c7"
+      color: "#7c3aed"
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export const WhyChooseUs = () => {
       title: "Bank Security",
       desc: "Granular RBAC permissions, encrypted document vault, & audit trails.",
       icon: Shield,
-      color: "#7c3aed"
+      color: "#8b5cf6"
     }
   ];
 
@@ -40,7 +40,7 @@ export const WhyChooseUs = () => {
       title: "24/7 Availability",
       desc: "99.9% cloud SaaS uptime with iOS & Android mobile self-service app.",
       icon: Headset,
-      color: "#2563eb"
+      color: "#4f46e5"
     },
     {
       id: 6,

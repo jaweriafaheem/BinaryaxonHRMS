@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { 
   LayoutDashboard, User, MapPin, CreditCard, Key, 
   CheckCircle2, Play, RefreshCw, Download, ShieldCheck, 
-  Building, Sparkles, FileText, ArrowRight, Utensils
+  Building, Sparkles, FileText, ArrowRight, Utensils,
+  Bot, BrainCircuit, Cpu, TrendingUp, Clock, ScanLine
 } from 'lucide-react';
 
 export const InteractiveDemo = () => {
@@ -12,9 +13,17 @@ export const InteractiveDemo = () => {
   const [geoPunchStatus, setGeoPunchStatus] = useState(null);
   const [isPunching, setIsPunching] = useState(false);
 
+  // Attendance Simulator State
+  const [attPunchStatus, setAttPunchStatus] = useState(null);
+  const [isAttPunching, setIsAttPunching] = useState(false);
+
   // Payroll Simulator State
   const [payrollRunning, setPayrollRunning] = useState(false);
   const [payrollDone, setPayrollDone] = useState(false);
+
+  // Axon Intelligence AI State
+  const [aiScanning, setAiScanning] = useState(false);
+  const [aiReportDone, setAiReportDone] = useState(true);
 
   // Gate Pass Scanner State
   const [passScanned, setPassScanned] = useState(false);
@@ -34,6 +43,21 @@ export const InteractiveDemo = () => {
     }, 1200);
   };
 
+  const simulateAttPunch = () => {
+    setIsAttPunching(true);
+    setAttPunchStatus(null);
+    setTimeout(() => {
+      setIsAttPunching(false);
+      setAttPunchStatus({
+        success: true,
+        method: "Biometric Hardware + GPS Polygon",
+        shift: "Morning General (09:00 AM - 06:00 PM)",
+        status: "On Time (Recorded)",
+        time: new Date().toLocaleTimeString()
+      });
+    }, 1100);
+  };
+
   const simulatePayroll = () => {
     setPayrollRunning(true);
     setPayrollDone(false);
@@ -43,22 +67,32 @@ export const InteractiveDemo = () => {
     }, 1500);
   };
 
+  const simulateAiScan = () => {
+    setAiScanning(true);
+    setAiReportDone(false);
+    setTimeout(() => {
+      setAiScanning(false);
+      setAiReportDone(true);
+    }, 1400);
+  };
+
   return (
     <section id="live-demo" className="interactive-demo-section">
       <div className="container">
-        <div className="section-header">
+        <div className="section-header text-center">
           <div className="badge">
             <Sparkles size={14} />
             <span>LIVE INTERACTIVE SYSTEM SIMULATOR</span>
           </div>
           <h2>Experience <span className="text-gradient">Binaryaxon HRMS</span> in Action</h2>
           <p>
-            Test real-time admin KPIs, employee self-service, GPS geo-fence validation, and WPS payroll execution below.
+            Test real-time admin KPIs, employee self-service, GPS geo-fence validation, Axon AI intelligence, and automated payroll processing below.
           </p>
         </div>
 
-        {/* Demo Navigation Tabs */}
+        {/* Demo Navigation Tabs - All Original + New Tabs Included */}
         <div className="demo-tabs-nav glass-panel">
+          {/* 1. Admin Dashboard (Original) */}
           <button 
             className={`demo-tab-btn ${activeTab === 'admin' ? 'active' : ''}`}
             onClick={() => setActiveTab('admin')}
@@ -67,6 +101,7 @@ export const InteractiveDemo = () => {
             <span>Admin Dashboard</span>
           </button>
           
+          {/* 2. Employee Self-Service (Original) */}
           <button 
             className={`demo-tab-btn ${activeTab === 'employee' ? 'active' : ''}`}
             onClick={() => setActiveTab('employee')}
@@ -75,6 +110,34 @@ export const InteractiveDemo = () => {
             <span>Employee Self-Service</span>
           </button>
 
+          {/* 3. Attendance and Geo fencing (New) */}
+          <button 
+            className={`demo-tab-btn ${activeTab === 'attendance-geo' ? 'active' : ''}`}
+            onClick={() => setActiveTab('attendance-geo')}
+          >
+            <Clock size={18} />
+            <span>Attendance and Geo fencing</span>
+          </button>
+
+          {/* 4. Axon Intelligence (New) */}
+          <button 
+            className={`demo-tab-btn ${activeTab === 'axon-ai' ? 'active' : ''}`}
+            onClick={() => setActiveTab('axon-ai')}
+          >
+            <BrainCircuit size={18} />
+            <span>Axon Intelligence</span>
+          </button>
+
+          {/* 5. Payroll Processing (New) */}
+          <button 
+            className={`demo-tab-btn ${activeTab === 'payroll-process' ? 'active' : ''}`}
+            onClick={() => setActiveTab('payroll-process')}
+          >
+            <CreditCard size={18} />
+            <span>Payroll Processing</span>
+          </button>
+
+          {/* 6. GPS Geo-Fencing (Original) */}
           <button 
             className={`demo-tab-btn ${activeTab === 'geofence' ? 'active' : ''}`}
             onClick={() => setActiveTab('geofence')}
@@ -83,6 +146,7 @@ export const InteractiveDemo = () => {
             <span>GPS Geo-Fencing</span>
           </button>
 
+          {/* 7. WPS Payroll Engine (Original) */}
           <button 
             className={`demo-tab-btn ${activeTab === 'payroll' ? 'active' : ''}`}
             onClick={() => setActiveTab('payroll')}
@@ -91,6 +155,7 @@ export const InteractiveDemo = () => {
             <span>WPS Payroll Engine</span>
           </button>
 
+          {/* 8. Gate & Meal Pass (Original) */}
           <button 
             className={`demo-tab-btn ${activeTab === 'passes' ? 'active' : ''}`}
             onClick={() => setActiveTab('passes')}
@@ -107,7 +172,10 @@ export const InteractiveDemo = () => {
           {activeTab === 'admin' && (
             <div className="demo-view-pane">
               <div className="pane-header">
-                <h3>Enterprise Admin Operational Dashboard</h3>
+                <div>
+                  <h3>Enterprise Admin Operational Dashboard</h3>
+                  <p className="pane-subdesc">Executive-level headcount metrics, liability breakdown, and real-time approval queues</p>
+                </div>
                 <span className="badge">Role: HR Director</span>
               </div>
 
@@ -171,7 +239,10 @@ export const InteractiveDemo = () => {
           {activeTab === 'employee' && (
             <div className="demo-view-pane">
               <div className="pane-header">
-                <h3>Employee Self-Service Portal</h3>
+                <div>
+                  <h3>Employee Self-Service Portal</h3>
+                  <p className="pane-subdesc">Instant payslip downloads, tax certificates, and live attendance calendar</p>
+                </div>
                 <span className="badge">Logged in: Zain Malik (ID: #EMP-892)</span>
               </div>
 
@@ -204,7 +275,215 @@ export const InteractiveDemo = () => {
             </div>
           )}
 
-          {/* TAB 3: GEOFENCING */}
+          {/* TAB 3: ATTENDANCE AND GEO FENCING (NEW) */}
+          {activeTab === 'attendance-geo' && (
+            <div className="demo-view-pane">
+              <div className="pane-header">
+                <div>
+                  <h3>Attendance and Geo fencing Simulator</h3>
+                  <p className="pane-subdesc">Biometric Machine Logs + Mobile GPS Geofence Polygon Boundary Synchronization</p>
+                </div>
+                <span className="badge">Biometric & GPS Synced</span>
+              </div>
+
+              <div className="geofence-sim-box glass-panel">
+                <div className="geo-radar">
+                  <div className="radar-circle circle-1"></div>
+                  <div className="radar-circle circle-2"></div>
+                  <div className="radar-center">
+                    <MapPin size={26} className="text-accentPin" />
+                  </div>
+                </div>
+
+                <div className="geo-controls">
+                  <div className="geo-status-tags">
+                    <span className="status-tag live">
+                      <span className="live-dot" /> Biometric Devices: Online
+                    </span>
+                    <span className="status-tag polygon">
+                      Assigned Shift: General 9AM - 6PM
+                    </span>
+                  </div>
+
+                  <h4>Verify Real-Time Shift & Geo-Attendance</h4>
+                  <p>Syncs biometric punch machine logs and restricts remote mobile clock-ins within authorized geographic polygons.</p>
+
+                  <button 
+                    className={`btn btn-primary ${isAttPunching ? 'loading' : ''}`}
+                    onClick={simulateAttPunch}
+                    disabled={isAttPunching}
+                  >
+                    {isAttPunching ? <RefreshCw size={18} className="spin-icon" /> : <ScanLine size={18} />}
+                    <span>{isAttPunching ? "Syncing Biometric & GPS Punch..." : "Simulate Live Attendance Punch"}</span>
+                  </button>
+
+                  {attPunchStatus && (
+                    <div className="geo-result-card glass-panel">
+                      <CheckCircle2 size={24} className="text-success" />
+                      <div>
+                        <div className="res-title">Attendance Punch Verified & Synced!</div>
+                        <div className="res-meta">
+                          Verification Mode: <strong>{attPunchStatus.method}</strong> <br />
+                          Shift Schedule: <strong>{attPunchStatus.shift}</strong> <br />
+                          Punch Status: <strong>{attPunchStatus.status}</strong> • Timestamp: <strong>{attPunchStatus.time}</strong>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* TAB 4: AXON INTELLIGENCE (NEW) */}
+          {activeTab === 'axon-ai' && (
+            <div className="demo-view-pane">
+              <div className="pane-header">
+                <div>
+                  <h3>Axon Intelligence™ AI Workforce Engine</h3>
+                  <p className="pane-subdesc">Autonomous Anomaly Detection, Overtime Forecasting & Compliance Guard</p>
+                </div>
+                <span className="badge badge-ai">
+                  <Sparkles size={13} />
+                  <span>AI Engine v2.4</span>
+                </span>
+              </div>
+
+              <div className="axon-ai-grid">
+                <div className="ai-stat-card glass-panel">
+                  <div className="ai-card-top">
+                    <TrendingUp size={20} className="text-accent" />
+                    <span className="ai-pill green">Optimized</span>
+                  </div>
+                  <div className="ai-stat-value">$14,280</div>
+                  <div className="ai-stat-label">Projected Overtime Cost Savings</div>
+                  <p className="ai-stat-sub">AI suggested roster rebalancing reduced night shift leakage by 18%.</p>
+                </div>
+
+                <div className="ai-stat-card glass-panel">
+                  <div className="ai-card-top">
+                    <ShieldCheck size={20} className="text-success" />
+                    <span className="ai-pill blue">100% Compliant</span>
+                  </div>
+                  <div className="ai-stat-value">Zero Violations</div>
+                  <div className="ai-stat-label">WPS & Labour Law Audit</div>
+                  <p className="ai-stat-sub">Pre-payroll AI scan detected zero salary variance or unpaid deductions.</p>
+                </div>
+
+                <div className="ai-stat-card glass-panel">
+                  <div className="ai-card-top">
+                    <Cpu size={20} className="text-warning" />
+                    <span className="ai-pill orange">3 Action Items</span>
+                  </div>
+                  <div className="ai-stat-value">Expiry Guard</div>
+                  <div className="ai-stat-label">Passport & Visa Alerts</div>
+                  <p className="ai-stat-sub">Automated renewal reminders dispatched 60 days before expiration.</p>
+                </div>
+              </div>
+
+              <div className="ai-interactive-panel glass-panel">
+                <div className="ai-panel-header">
+                  <div className="ai-header-left">
+                    <Bot size={22} className="text-accent" />
+                    <div>
+                      <h4>Run Live Axon AI Workforce Audit</h4>
+                      <p>Scan 1,245 active employee records for shift bottlenecks, leave sandwich patterns, and WPS anomalies.</p>
+                    </div>
+                  </div>
+
+                  <button 
+                    className="btn btn-primary"
+                    onClick={simulateAiScan}
+                    disabled={aiScanning}
+                  >
+                    {aiScanning ? <RefreshCw size={16} className="spin-icon" /> : <Sparkles size={16} />}
+                    <span>{aiScanning ? "Analyzing Workforce Data..." : "Run AI Health Scan"}</span>
+                  </button>
+                </div>
+
+                {aiReportDone && (
+                  <div className="ai-scan-results">
+                    <div className="ai-result-row success">
+                      <CheckCircle2 size={18} className="text-success" />
+                      <div>
+                        <strong>Shift Optimization Recommendation Applied:</strong> 
+                        <span> Morning shift headcount aligned with peak client hours in Karachi Tech Park.</span>
+                      </div>
+                    </div>
+                    <div className="ai-result-row info">
+                      <CheckCircle2 size={18} className="text-accent" />
+                      <div>
+                        <strong>Leave Encashment Auto-Calculated:</strong> 
+                        <span> 24 eligible employees verified with updated basic salary formulas.</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* TAB 5: PAYROLL PROCESSING (NEW) */}
+          {activeTab === 'payroll-process' && (
+            <div className="demo-view-pane">
+              <div className="pane-header">
+                <div>
+                  <h3>1-Click Automated Payroll Processing</h3>
+                  <p className="pane-subdesc">Batch salary computation, automated loan deductions, and UAE WPS SIF file creation</p>
+                </div>
+                <span className="badge">Cycle: Current Fiscal Month</span>
+              </div>
+
+              <div className="payroll-sim-container">
+                <div className="payroll-step-card glass-panel">
+                  <h4>Execute Multi-Company Batch Payroll</h4>
+                  <p>Calculates gross salary, tax slabs, loan repayments, and WPS SIF compliance files for 1,245 employees across all branches.</p>
+
+                  <button 
+                    className="btn btn-primary"
+                    onClick={simulatePayroll}
+                    disabled={payrollRunning}
+                  >
+                    {payrollRunning ? <RefreshCw size={18} className="spin-icon" /> : <Play size={18} />}
+                    <span>{payrollRunning ? "Calculating Tax & WPS SIF Files..." : "Run Batch Payroll Execution"}</span>
+                  </button>
+
+                  {payrollDone && (
+                    <div className="payroll-done-card">
+                      <div className="done-header">
+                        <CheckCircle2 size={20} className="text-success" />
+                        <span>Batch Payroll Calculation Complete!</span>
+                      </div>
+                      <div className="payroll-breakdown-grid">
+                        <div className="pb-item">
+                          <span>Total Gross Salary</span>
+                          <strong>$482,900.00</strong>
+                        </div>
+                        <div className="pb-item">
+                          <span>Statutory Deductions</span>
+                          <strong>$38,400.00</strong>
+                        </div>
+                        <div className="pb-item">
+                          <span>Net Disbursed</span>
+                          <strong>$444,500.00</strong>
+                        </div>
+                        <div className="pb-item">
+                          <span>WPS SIF File</span>
+                          <strong className="text-accent">Generated & Ready</strong>
+                        </div>
+                      </div>
+                      <button className="btn btn-secondary btn-sm mt-3" onClick={() => alert("WPS SIF Batch File Exported Successfully!")}>
+                        <Download size={14} />
+                        <span>Export Bank Payment SIF File</span>
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* TAB 6: GPS GEO-FENCING (ORIGINAL) */}
           {activeTab === 'geofence' && (
             <div className="demo-view-pane">
               <div className="pane-header">
@@ -252,7 +531,7 @@ export const InteractiveDemo = () => {
             </div>
           )}
 
-          {/* TAB 4: PAYROLL ENGINE */}
+          {/* TAB 7: WPS PAYROLL ENGINE (ORIGINAL) */}
           {activeTab === 'payroll' && (
             <div className="demo-view-pane">
               <div className="pane-header">
@@ -309,7 +588,7 @@ export const InteractiveDemo = () => {
             </div>
           )}
 
-          {/* TAB 5: GATE & MEAL PASS */}
+          {/* TAB 8: GATE & MEAL PASS (ORIGINAL) */}
           {activeTab === 'passes' && (
             <div className="demo-view-pane">
               <div className="pane-header">
@@ -352,3 +631,5 @@ export const InteractiveDemo = () => {
     </section>
   );
 };
+
+export default InteractiveDemo;

@@ -4595,3 +4595,204 @@ input, select, textarea { font-family: inherit; outline: none; }
     padding: 2rem 1.5rem;
   }
 }
+
+/* ==========================================================================
+   Axon Intelligence & Simulator Extra Styles
+   ========================================================================== */
+
+.pane-subdesc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.badge-ai {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.12) 0%, rgba(2, 132, 199, 0.12) 100%);
+  color: #4f46e5;
+  border: 1px solid rgba(79, 70, 229, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.axon-ai-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.ai-stat-card {
+  padding: 1.4rem 1.3rem;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ai-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.ai-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.ai-pill {
+  font-size: 0.68rem;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+}
+
+.ai-pill.green {
+  background: rgba(5, 150, 105, 0.1);
+  color: #059669;
+}
+
+.ai-pill.blue {
+  background: rgba(2, 132, 199, 0.1);
+  color: #0284c7;
+}
+
+.ai-pill.orange {
+  background: rgba(217, 119, 6, 0.1);
+  color: #d97706;
+}
+
+.ai-stat-value {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.ai-stat-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 0.35rem;
+}
+
+.ai-stat-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.ai-interactive-panel {
+  padding: 1.5rem 1.6rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+}
+
+.ai-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.ai-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.ai-header-left h4 {
+  font-size: 1.05rem;
+  font-weight: 750;
+  color: var(--text-main);
+  margin-bottom: 0.15rem;
+}
+
+.ai-header-left p {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.ai-scan-results {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(226, 232, 240, 0.85);
+}
+
+.ai-result-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+
+.ai-result-row.success {
+  background: rgba(5, 150, 105, 0.06);
+  border: 1px solid rgba(5, 150, 105, 0.2);
+  color: #065f46;
+}
+
+.ai-result-row.info {
+  background: rgba(2, 132, 199, 0.06);
+  border: 1px solid rgba(2, 132, 199, 0.2);
+  color: #0369a1;
+}
+
+.geo-status-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 650;
+}
+
+.status-tag.live {
+  background: rgba(5, 150, 105, 0.1);
+  color: #059669;
+  border: 1px solid rgba(5, 150, 105, 0.25);
+}
+
+.status-tag.polygon {
+  background: rgba(2, 132, 199, 0.1);
+  color: #0284c7;
+  border: 1px solid rgba(2, 132, 199, 0.25);
+}
+
+.live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #059669;
+}
+
+@media (max-width: 991px) {
+  .axon-ai-grid {
+    grid-template-columns: 1fr;
+  }
+  .ai-panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

@@ -72,3 +72,4 @@ export const ReportsAnalyticsSection = () => {
 };
 
 export default ReportsAnalyticsSection;
+
