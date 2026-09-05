@@ -31,8 +31,8 @@ export const Navbar = ({ onOpenDemoModal }) => {
           <a href="#live-demo" className="nav-link">Live Demo</a>
           <a href="#roi-calculator" className="nav-link">Pricing Calculator</a>
           <a href="#security" className="nav-link">Security</a>
-          <a href="#contact" className="nav-link">Contact</a>
-          <a href="#faq" className="nav-link">FAQ</a>
+          {/* <a href="#contact" className="nav-link">Contact</a>
+          <a href="#faq" className="nav-link">FAQ</a> */}
         </nav>
 
         {/* Actions */}
